@@ -1,4 +1,5 @@
 import React from 'react';
+import citation from './citation';
 import { render } from 'react-dom';
 import citations from '../citations';
 
@@ -21,10 +22,7 @@ class App extends React.Component{
     render(){
         return(
             <div>
-                <p>
-                    {this.state.citation}
-                    <span>- {this.state.auteur}</span>
-                </p>
+                <Citation />
                 <button onClick={e => this.genererCitation(e)}>Une autre citation!</button>
             </div>
         )
