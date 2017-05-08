@@ -1,5 +1,5 @@
 import React from 'react';
-import citation from './citation';
+import Citation from './Citation';
 import { render } from 'react-dom';
 import citations from '../citations';
 
@@ -22,7 +22,7 @@ class App extends React.Component{
     render(){
         return(
             <div>
-                <Citation />
+                <Citation details={this.state} />
                 <button onClick={e => this.genererCitation(e)}>Une autre citation!</button>
             </div>
         )

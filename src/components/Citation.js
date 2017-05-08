@@ -4,8 +4,8 @@ class Citation extends React.Component{
     render(){
         return(
             <p>
-                {this.state.citation}
-                <span>- {this.state.auteur}</span>
+                {this.props.details.citation}
+                <span>- {this.props.details.auteur}</span>
             </p>
         )
     }
